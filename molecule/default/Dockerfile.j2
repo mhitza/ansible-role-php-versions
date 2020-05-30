@@ -1,0 +1,5 @@
+FROM registry.access.redhat.com/ubi8/ubi-init
+
+RUN dnf install -y sudo python3-pip \
+      https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm && \
+    pip3 install ansible
